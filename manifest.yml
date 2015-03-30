@@ -1,0 +1,9 @@
+---
+applications:
+- name: citytest-n
+  memory: 512M
+  path: ./build/libs/citytest-1.0.jar
+  host: citytest-a
+  services:
+  - my-mysql
+  - targetservice1

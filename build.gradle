@@ -20,7 +20,7 @@ allprojects {
 }
 
 ext {
-    springCloudVersion = "1.0.0.RC2"
+    springCloudVersion = "1.1.1.RELEASE"
 }
 
 apply plugin: 'java'
@@ -75,6 +75,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
     testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    
     compile("org.springframework.cloud:spring-cloud-spring-service-connector:${springCloudVersion}")
     compile("org.springframework.cloud:spring-cloud-cloudfoundry-connector:${springCloudVersion}")
     //runtime("mysql:mysql-connector-java:5.1.25")
